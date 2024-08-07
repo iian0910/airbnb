@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 export const Logo = () => {
   const router = useRouter()
   
-  console.log('isProd', process.env.NODE_ENV)
   return (
     <Image
       alt="Logo"

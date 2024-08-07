@@ -4,7 +4,7 @@
 const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
-  output: isProd ? 'export' : undefined,
+  output: isProd ? 'out' : undefined,
   // distDir: 'dist',
   reactStrictMode: true,
   images: {

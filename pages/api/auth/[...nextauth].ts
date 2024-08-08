@@ -15,12 +15,12 @@ export const authOptions: AuthOptions = {
   adapter: PrismaAdapter(prisma),
   providers: [
     GithubProvider({
-      clientId: process.env.GB_ID as string,
-      clientSecret: process.env.GB_SECRET as string,
+      clientId: process.env.NODE_ENV === 'production' ? process.env.GB_ID as string : process.env.GB_ID_LOCAL as string,
+      clientSecret: process.env.NODE_ENV === 'production' ? process.env.GB_SECRET as string : process.env.GB_SECRET_LOCAL as string
     }),
     GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID as string,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
+      clientId: process.env.NODE_ENV === 'production' ? process.env.GOOGLE_CLIENT_ID as string : process.env.GOOGLE_CLIENT_ID_LOCAL as string,
+      clientSecret: process.env.NODE_ENV === 'production' ? process.env.GOOGLE_CLIENT_SECRET as string : process.env.GOOGLE_CLIENT_SECRET_LOCAL as string,
     }),
     Credentials({
       name: 'credentials',

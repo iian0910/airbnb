@@ -7,6 +7,7 @@ import "./globals.css";
 import { Navbar } from "./components/navbar/Navbar";
 import { RegisterModal } from "./components/modals/RegisterModal";
 import { LogInModal } from "./components/modals/LogInModal";
+import { RentModal } from "./components/modals/RentModal";
 import { ToastProvider } from "./providers/ToastProvider";
 import getCurrentUser from "./actions/getCurrentUser";
 
@@ -24,12 +25,12 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const currentUser = await getCurrentUser()
-  console.log('currentUser', currentUser)
   return (
     <html lang="en">
       <body className={font.className}>
         <ClientOnly>
           <ToastProvider />
+          <RentModal />
           <LogInModal />
           <RegisterModal />
           <Navbar currentUser={currentUser}/>

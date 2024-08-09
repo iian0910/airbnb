@@ -10,7 +10,7 @@ import { BiDollar } from "react-icons/bi";
 interface InputProps {
   id: string;
   label: string;
-  type: string;
+  type?: string;
   disabled?: boolean;
   formatPrice?:boolean;
   required?: boolean;

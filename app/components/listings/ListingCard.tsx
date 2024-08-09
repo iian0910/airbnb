@@ -94,7 +94,6 @@ const ListingCard: React.FC<ListingCardProps> = ({
           <div className="absolute top-3 right-3">
             <HeartButton
               listingId={data.id}
-              currentUser={currentUser}
             />
           </div>
         </div>

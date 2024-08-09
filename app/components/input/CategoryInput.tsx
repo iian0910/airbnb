@@ -9,7 +9,7 @@ interface CategoryInputProps {
   onClick: (value: string) => void
 }
 
-export const CategoryInput:React.FC<CategoryInputProps> = ({
+const CategoryInput:React.FC<CategoryInputProps> = ({
   icon: Icon,
   label,
   selected,
@@ -38,3 +38,5 @@ export const CategoryInput:React.FC<CategoryInputProps> = ({
     </div>
   )
 }
+
+export default CategoryInput

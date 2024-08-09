@@ -11,7 +11,7 @@ interface CounterProps {
   onChange: (value: number) => void
 }
 
-export const Counter: React.FC<CounterProps> = ({
+const Counter: React.FC<CounterProps> = ({
   title,
   subtitle,
   value,
@@ -80,3 +80,5 @@ export const Counter: React.FC<CounterProps> = ({
     </div>
   )
 }
+
+export default Counter

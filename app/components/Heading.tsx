@@ -6,7 +6,7 @@ interface HeadingProps {
   center?: boolean
 }
 
-export const Heading: React.FC<HeadingProps> = ({
+const Heading: React.FC<HeadingProps> = ({
   title,
   subtitle,
   center
@@ -24,3 +24,5 @@ export const Heading: React.FC<HeadingProps> = ({
     </div>
   )
 }
+
+export default Heading

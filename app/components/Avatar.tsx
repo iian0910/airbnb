@@ -6,7 +6,7 @@ interface AvatarProps {
   src: string | null | undefined
 }
 
-export const Avatar:React.FC<AvatarProps> = ({src}) => {
+const Avatar:React.FC<AvatarProps> = ({src}) => {
   return (
     <Image
       className="rounded-full"
@@ -17,3 +17,5 @@ export const Avatar:React.FC<AvatarProps> = ({src}) => {
     />
   )
 }
+
+export default Avatar

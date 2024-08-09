@@ -4,7 +4,7 @@ interface ContainerProps {
   children: React.ReactNode
 }
 
-export const Container: React.FC<ContainerProps> = ({
+const Container: React.FC<ContainerProps> = ({
   children
 }) => {
   return (
@@ -20,3 +20,5 @@ export const Container: React.FC<ContainerProps> = ({
     </div>
   )
 }
+
+export default Container

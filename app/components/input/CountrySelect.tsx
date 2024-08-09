@@ -16,7 +16,7 @@ interface CountrySelectProps {
   onChange: (value: CountrySelectValue) => void
 }
 
-export const CountrySelect:React.FC<CountrySelectProps> = ({
+const CountrySelect:React.FC<CountrySelectProps> = ({
   value,
   onChange
 }) => {
@@ -58,3 +58,5 @@ export const CountrySelect:React.FC<CountrySelectProps> = ({
     </div>
   )
 }
+
+export default CountrySelect

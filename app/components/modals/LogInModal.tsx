@@ -12,14 +12,14 @@ import {
 } from "react-hook-form";
 import { useRegisterModal } from "@/app/hooks/useRegisterModal";
 import { useLogInModal } from "@/app/hooks/useLogInModal";
-import { Modal } from "./Modal";
-import { Heading } from "../Heading";
-import { Input } from "../input/Input";
+import Modal from "./Modal";
+import Heading from "../Heading";
+import Input from "../input/Input";
 import toast from "react-hot-toast";
-import { Button } from "../Button";
+import Button from "../Button";
 import { useRouter } from "next/navigation";
 
-export const LogInModal = () => {
+const LogInModal = () => {
   const router = useRouter()
   const registerModal = useRegisterModal()
   const logInModal = useLogInModal()
@@ -142,3 +142,5 @@ export const LogInModal = () => {
     />
   )
 }
+
+export default LogInModal

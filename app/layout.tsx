@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Nunito } from 'next/font/google' 
-import { ClientOnly } from "./components/ClientOnly";
+import ClientOnly from "./components/ClientOnly";
 import "./globals.css";
 
 // custom components
-import { Navbar } from "./components/navbar/Navbar";
-import { RegisterModal } from "./components/modals/RegisterModal";
-import { LogInModal } from "./components/modals/LogInModal";
-import { RentModal } from "./components/modals/RentModal";
+import Navbar from "./components/navbar/Navbar";
+import RegisterModal from "./components/modals/RegisterModal";
+import LogInModal from "./components/modals/LogInModal";
+import RentModal from "./components/modals/RentModal";
 import { ToastProvider } from "./providers/ToastProvider";
 import getCurrentUser from "./actions/getCurrentUser";
 

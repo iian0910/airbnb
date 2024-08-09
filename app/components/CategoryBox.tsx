@@ -11,7 +11,7 @@ interface CategoryBoxProps {
   selected?: boolean
 }
 
-export const CategoryBox: React.FC<CategoryBoxProps> = ({
+const CategoryBox: React.FC<CategoryBoxProps> = ({
   icon: Icon,
   label,
   selected
@@ -68,3 +68,5 @@ export const CategoryBox: React.FC<CategoryBoxProps> = ({
     </div>
   )
 }
+
+export default CategoryBox

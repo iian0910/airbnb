@@ -1,12 +1,12 @@
 'use client';
 
-import { Container } from "../Container";
+import Container from "../Container";
 
 import { TbBeach, TbMountain, TbPool } from "react-icons/tb";
 import { GiBarn, GiBoatFishing, GiCactus, GiCastle, GiCaveEntrance, GiForestCamp, GiIsland, GiWindmill } from "react-icons/gi";
 import { MdOutlineVilla } from "react-icons/md";
 
-import { CategoryBox } from "../CategoryBox";
+import CategoryBox from "../CategoryBox";
 import { useSearchParams, usePathname } from "next/navigation";
 import { FaSkiing } from "react-icons/fa";
 import { IoDiamond } from "react-icons/io5";

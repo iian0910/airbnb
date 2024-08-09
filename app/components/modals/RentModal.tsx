@@ -5,14 +5,14 @@ import { useMemo, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import dynamic from "next/dynamic";
 
-import { Modal } from "./Modal";
-import { Heading } from "../Heading";
+import Modal from "./Modal";
+import Heading from "../Heading";
 import { categories } from "../navbar/Categories";
-import { CategoryInput } from "../input/CategoryInput";
-import { CountrySelect } from "../input/CountrySelect";
-import { Counter } from "../input/Counter";
+import CategoryInput from "../input/CategoryInput";
+import CountrySelect from "../input/CountrySelect";
+import Counter from "../input/Counter";
 import ImageUpload from "../input/ImageUpload";
-import { Input } from "../input/Input";
+import Input from "../input/Input";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
@@ -27,7 +27,7 @@ enum STEPS {
   PRICE = 5
 }
 
-export const RentModal = () => {
+const RentModal = () => {
   const router = useRouter()
   const rentModal = useRentModal();
 
@@ -284,3 +284,5 @@ export const RentModal = () => {
     />
   )
 }
+
+export default RentModal

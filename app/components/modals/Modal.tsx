@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { IoMdClose } from "react-icons/io";
-import { Button } from "../Button";
+import Button from "../Button";
 
 interface ModalProps {
   isOpen?: boolean;
@@ -17,7 +17,7 @@ interface ModalProps {
   secondaryActionLabel?: string
 }
 
-export const Modal: React.FC<ModalProps> = ({
+const Modal: React.FC<ModalProps> = ({
   isOpen,
   onClose,
   onSubmit,
@@ -192,3 +192,5 @@ export const Modal: React.FC<ModalProps> = ({
     </div>
   )
 }
+
+export default Modal

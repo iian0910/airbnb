@@ -1,9 +1,9 @@
 'use client'
 
 import { AiOutlineMenu } from "react-icons/ai"
-import { Avatar } from "../Avatar"
+import Avatar from "../Avatar"
 import { useCallback, useState } from "react"
-import { MenuItem } from "./MenuItem"
+import MenuItem from "./MenuItem"
 import { useRegisterModal } from "@/app/hooks/useRegisterModal"
 import { useLogInModal } from "@/app/hooks/useLogInModal"
 import { signOut } from "next-auth/react"
@@ -15,7 +15,7 @@ interface UserMenuProps {
   currentUser?: SafeUser | null
 }
 
-export const UserMenu: React.FC<UserMenuProps> = ({currentUser}) => {
+const UserMenu: React.FC<UserMenuProps> = ({currentUser}) => {
   const registerModal = useRegisterModal()
   const logInModal = useLogInModal()
   const rentModal = useRentModal()
@@ -148,3 +148,5 @@ export const UserMenu: React.FC<UserMenuProps> = ({currentUser}) => {
     </div>
   )
 }
+
+export default UserMenu

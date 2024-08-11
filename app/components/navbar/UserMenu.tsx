@@ -4,12 +4,12 @@ import { AiOutlineMenu } from "react-icons/ai"
 import Avatar from "../Avatar"
 import { useCallback, useState } from "react"
 import MenuItem from "./MenuItem"
-import { useRegisterModal } from "@/app/hooks/useRegisterModal"
-import { useLogInModal } from "@/app/hooks/useLogInModal"
+import useRegisterModal from "@/app/hooks/useRegisterModal"
+import useLogInModal from "@/app/hooks/useLogInModal"
 import { signOut } from "next-auth/react"
 
 import { SafeUser } from "@/app/types"
-import { useRentModal } from "@/app/hooks/useRentModal"
+import useRentModal from "@/app/hooks/useRentModal"
 
 interface UserMenuProps {
   currentUser?: SafeUser | null

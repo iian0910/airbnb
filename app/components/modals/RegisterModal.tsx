@@ -9,8 +9,8 @@ import {
   SubmitHandler,
   useForm
 } from "react-hook-form";
-import { useRegisterModal } from "@/app/hooks/useRegisterModal";
-import { useLogInModal } from "@/app/hooks/useLogInModal";
+import useRegisterModal from "@/app/hooks/useRegisterModal";
+import useLogInModal from "@/app/hooks/useLogInModal";
 import Modal from "./Modal";
 import Heading from "../Heading";
 import Input from "../input/Input";

@@ -1,6 +1,6 @@
 'use client';
 
-import { useRentModal } from "@/app/hooks/useRentModal";
+import useRentModal from "@/app/hooks/useRentModal";
 import { useMemo, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import dynamic from "next/dynamic";

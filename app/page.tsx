@@ -33,7 +33,7 @@ export default async function Home() {
           2xl:grid-cols-6
           gap-8
         ">
-          {listings.map((listing) => {
+          {listings.map((listing: any) => {
             return (
               <ListingCard
                 key={listing.id}

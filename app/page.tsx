@@ -5,6 +5,7 @@ import Container from "./components/Container";
 import EmptyState from "./components/EmptyState";
 import ListingCard from "./components/listings/ListingCard";
 
+// Next.js 不支援運行時靜態和動態類型之間的切換，加上這行避免佈署拋出錯誤。
 export const dynamic = "force-dynamic";
 interface HomeProps {
   searchParams: IListingsParams

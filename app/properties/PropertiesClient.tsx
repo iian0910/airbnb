@@ -10,7 +10,7 @@ import toast from "react-hot-toast";
 import ListingCard from "../components/listings/ListingCard";
 
 interface PropertiesClientProps {
-  listings: SafeListing[] | any;
+  listings: SafeListing[];
   currentUser: SafeUser | null
 }
 
@@ -46,15 +46,15 @@ const PropertiesClient: React.FC<PropertiesClientProps> = ({
       <div className="
         mt-10
         grid
-        grid-col-1
-        sm:grid-col-2
-        md:grid-col-3
-        lg:grid-col-4
-        xl:grid-col-5
+        grid-cols-1
+        sm:grid-cols-2
+        md:grid-cols-3
+        lg:grid-cols-4
+        xl:grid-cols-5
         2xl:grid-cols-6
         gap-8
       ">
-        {listings.map((listing: any) => (
+        {listings.map((listing) => (
           <ListingCard
             key={listing.id}
             data={listing}

@@ -5,16 +5,16 @@ import Container from "./components/Container";
 import EmptyState from "./components/EmptyState";
 import ListingCard from "./components/listings/ListingCard";
 
+export const dynamic = "force-dynamic";
 interface HomeProps {
   searchParams: IListingsParams
 }
 
 const Home = async ({searchParams}: HomeProps) => {
-
   const listings = await getListings(searchParams)
   const currentUser = await getCurrentUser()
 
-  if(!listings || listings.length === 0) {
+  if(listings.length === 0) {
     return (
       <ClientOnly>
         <EmptyState showReset/>

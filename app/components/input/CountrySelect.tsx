@@ -6,13 +6,13 @@ import Select from 'react-select'
 export type CountrySelectValue = {
   flag: string,
   label: string,
-  latlng: string,
+  latlng: number[],
   region: string,
   value: string
 }
 
 interface CountrySelectProps {
-  value?: string;
+  value?: CountrySelectValue;
   onChange: (value: CountrySelectValue) => void
 }
 
